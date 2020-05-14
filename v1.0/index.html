@@ -15,15 +15,16 @@
   </head>
 
   <body>
+    <div id="content-desktop">
       <p>
-        <button style="--content: 'test 1';" type="button" id="btnOne" onclick="checkFirst()">
+        <button style="--content: 'test 1';" type="button" id="btnOne" onclick="checkFirst('D')">
           <div class="left"></div>
             test 1
           <div class="right"></div>
         </button>
       </p>
       <p>
-        <button style="--content: 'test 2';" type="button" id="btnTwo" onclick="checkSecond()">
+        <button style="--content: 'test 2';" type="button" id="btnTwo" onclick="checkSecond('D')">
           <div class="left"></div>
             test 2
           <div class="right"></div>
@@ -31,7 +32,7 @@
       </p>
 
       <p>
-      <button style="--content: 'test 3';" type="button" id="btnThree" onclick="checkThird()">
+      <button style="--content: 'test 3';" type="button" id="btnThree" onclick="checkThird('D')">
         <div class="left"></div>
           test 3
         <div class="right"></div>
@@ -39,13 +40,48 @@
       </p>
 
       <p></p>
-      <p>
-      <button style="--content: 'restart';" type="button" id="restart" onclick="restart()">
+      <button style="--content: 'restart';" type="button" id="restart" onclick="restart('D')">
         <div class="left"></div>
           restart
         <div class="right"></div>
       </button>
       </p>
-    
+
+    </div>
+
+    <div id="content-mobile">
+      <p>
+        <button style="--content: 'test 1';" type="button" id="btnOneM" onclick="checkFirst('M')">
+          <div class="left"></div>
+            test 1
+          <div class="right"></div>
+        </button>
+      </p>
+      <p>
+        <button style="--content: 'test 2';" type="button" id="btnTwoM" onclick="checkSecond('M')">
+          <div class="left"></div>
+            test 2
+          <div class="right"></div>
+        </button>
+      </p>
+
+      <p>
+      <button style="--content: 'test 3';" type="button" id="btnThreeM" onclick="checkThird('M')">
+        <div class="left"></div>
+          test 3
+        <div class="right"></div>
+      </button>
+      </p>
+
+      <p></p>
+      <button style="--content: 'restart';" type="button" id="restartM" onclick="restart('M')">
+        <div class="left"></div>
+          restart
+        <div class="right"></div>
+      </button>
+      </p>
+
+    </div>
+      
   </body>
 </html>
